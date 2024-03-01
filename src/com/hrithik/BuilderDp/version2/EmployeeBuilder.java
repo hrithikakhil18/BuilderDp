@@ -1,6 +1,9 @@
-package com.hrithik.BuilderDp.version1;
+package com.hrithik.BuilderDp.version2;
+
+import com.hrithik.BuilderDp.version2.Employee;
 
 public class EmployeeBuilder {
+
     String name;
     String emp_id;
     double salary;
@@ -41,6 +44,8 @@ public class EmployeeBuilder {
         this.name = name;
     }
 
+
+
     public String getemp_id() {
         return emp_id;
     }
@@ -49,4 +54,7 @@ public class EmployeeBuilder {
         this.emp_id = emp_id;
     }
 
+    public Employee build(){
+        return new Employee(this);
+    }
 }

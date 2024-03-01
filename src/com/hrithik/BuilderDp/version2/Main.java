@@ -1,4 +1,7 @@
-package com.hrithik.BuilderDp.version1;
+package com.hrithik.BuilderDp.version2;
+
+import com.hrithik.BuilderDp.version2.Employee;
+import com.hrithik.BuilderDp.version2.EmployeeBuilder;
 
 public class Main {
     public static void main(String[] args) {
@@ -11,7 +14,7 @@ public class Main {
         eb.setSalary(100000);
 
 
-        Employee e1 = new Employee(eb);
+        Employee e1 = eb.build();
         System.out.println(e1.name + " " + e1.emp_id + " " + e1.yoe +" "+ e1.email + " "+ e1.salary);
 
     }

@@ -1,7 +1,8 @@
-package com.hrithik.BuilderDp.version1;
+package com.hrithik.BuilderDp.version2;
+
+import com.hrithik.BuilderDp.version2.EmployeeBuilder;
 
 public class Employee {
-
     String name;
     String emp_id;
     double salary;
